@@ -3,9 +3,10 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import PastEvents from './components/PastEvents';
-import Startups from './components/Startups';
-import Features from './components/Features';
+import EventHighlights from './components/EventHighlights';
+import ImpactSection from './components/ImpactSection';
 import Speakers from './components/Speakers';
+import EventAgenda from './components/EventAgenda';
 import Footer from './components/Footer';
 
 function App() {
@@ -15,9 +16,10 @@ function App() {
       <Hero />
       <About />
       <PastEvents />
-      <Startups />
+      <EventHighlights />
+      <ImpactSection />
       <Speakers />
-      <Features />
+      <EventAgenda />
       <Footer />
     </div>
   );

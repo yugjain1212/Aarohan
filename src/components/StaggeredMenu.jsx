@@ -175,16 +175,27 @@ export const StaggeredMenu = ({
     return (
         <div className="fixed top-0 left-0 w-full z-50" style={{ ['--sm-accent']: accentColor }}>
             {/* Header */}
-            <header className={`flex items-center justify-between px-4 md:px-8 py-4 transition-all duration-300 ${scrolled ? 'bg-primary/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
-                }`}>
-                <div className="flex items-center gap-3">
+            <header
+                className={`flex items-center justify-between px-5 md:px-10 transition-all duration-500 ${scrolled
+                        ? 'py-3 backdrop-blur-xl shadow-lg'
+                        : 'py-5 backdrop-blur-none'
+                    }`}
+                style={{
+                    background: scrolled
+                        ? 'linear-gradient(to bottom, rgba(230, 242, 255, 0.88) 0%, rgba(210, 230, 252, 0.75) 60%, rgba(190, 218, 250, 0.4) 100%)'
+                        : 'linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(200, 225, 255, 0.08) 50%, transparent 100%)',
+                    borderBottom: scrolled ? '1px solid rgba(180, 210, 250, 0.3)' : 'none',
+                }}
+            >
+                <div className="flex items-center gap-4">
                     <img
                         src={logoUrl}
                         alt="Logo"
-                        className="h-12 md:h-16 w-auto object-contain"
+                        className="h-16 md:h-20 w-auto object-contain drop-shadow-lg"
                         draggable={false}
                     />
-                    <span className="text-lg md:text-xl font-bold text-white hidden sm:block">
+                    <span className={`text-xl md:text-2xl font-bold hidden sm:block drop-shadow-md transition-colors duration-500 ${scrolled ? 'text-[#0a2e5c]' : 'text-white'
+                        }`}>
                         Aarohan <span className="text-accent">3.0</span>
                     </span>
                 </div>
@@ -192,10 +203,11 @@ export const StaggeredMenu = ({
                 <button
                     ref={toggleBtnRef}
                     onClick={toggleMenu}
-                    className="flex items-center gap-3 text-white font-medium hover:opacity-80 transition-opacity"
+                    className={`flex items-center gap-3 font-semibold hover:opacity-80 transition-all duration-500 ${scrolled ? 'text-[#0a2e5c]' : 'text-white'
+                        }`}
                     aria-label={open ? 'Close menu' : 'Open menu'}
                 >
-                    <span className="text-sm md:text-base">{open ? 'Close' : 'Menu'}</span>
+                    <span className="text-sm md:text-base tracking-wide">{open ? 'Close' : 'Menu'}</span>
                     <div className="w-6 h-6 flex flex-col justify-center items-center gap-1.5">
                         <span className={`w-6 h-0.5 bg-current rounded transition-all duration-300 ${open ? 'rotate-45 translate-y-1' : ''}`}></span>
                         <span className={`w-6 h-0.5 bg-current rounded transition-all duration-300 ${open ? '-rotate-45 -translate-y-1' : ''}`}></span>
