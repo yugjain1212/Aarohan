@@ -4,52 +4,106 @@ import { Users, Linkedin, Twitter } from 'lucide-react';
 
 const mentors = [
     {
-        name: "R. Gopalakrishnan",
-        role: "executive director",
-        company: "Tata Sons Ltd",
+        name: "Mr. R. Gopalakrishnan",
+        role: "Special Guest",
+        company: "Former Director Tata Sons | Author & Speaker",
         image: "grad-1"
     },
     {
-        name: "Subhash Gupta",
-        role: "Engineering Manager",
-        company: "TechFlow",
+        name: "Mr. Abhishek Jain",
+        role: "Practice Head",
+        company: "Wipro",
         image: "grad-2"
     },
     {
-        name: "Manoj Anand",
-        role: "Product Manager",
-        company: "Innovate",
+        name: "Mr. Aditya Nath",
+        role: "Founder",
+        company: "Eco centric & Nineth Space",
         image: "grad-3"
     },
     {
-        name: "Dr. Ajay Kumar Kaushik",
-        role: "Backend Developer",
-        company: "CloudScale",
+        name: "Mr. Ankit Singhal",
+        role: "Director",
+        company: "SysB International",
         image: "grad-4"
     },
     {
-        name: "Ms. Jyoti",
-        role: "UX Researcher",
-        company: "DesignCo",
+        name: "Ankit VK Singhal",
+        role: "Founder",
+        company: "SysB International & Satwik Universe",
         image: "grad-5"
     },
     {
-        name: "Prem Singh",
-        role: "Growth Marketer",
-        company: "ScaleUp",
+        name: "Ankur Lohani Kumar",
+        role: "Founder",
+        company: "Find Your Fit",
         image: "grad-6"
     },
     {
-        name: "Naveen Kumar Sharma",
-        role: "Investment Lead",
-        company: "VentureCap",
+        name: "Apoorv Sharma",
+        role: "Co-Founder",
+        company: "Excluto",
         image: "grad-7"
     },
     {
-        name: "Nidhi Kachhawa",
-        role: "CTO",
-        company: "FutureTech",
+        name: "Aquil Busrai",
+        role: "CEO",
+        company: "Aquil Busrai Consulting",
         image: "grad-8"
+    },
+    {
+        name: "Mr. Arihant Jain",
+        role: "Co-Founder",
+        company: "SaturnIQ",
+        image: "grad-9"
+    },
+    {
+        name: "Dr. Avinash Panwar",
+        role: "Technical Education",
+        company: "Govt. of India",
+        image: "grad-10"
+    },
+    {
+        name: "Gaurav Sharma",
+        role: "CEO",
+        company: "ACIC-VGU Foundation",
+        image: "grad-11"
+    },
+    {
+        name: "Manu Sharma",
+        role: "Founder",
+        company: "Gladful",
+        image: "grad-12"
+    },
+    {
+        name: "Dr. Munish Jindal",
+        role: "Founder & CEO",
+        company: "HoverRobotix",
+        image: "grad-13"
+    },
+    {
+        name: "Mr. Omkar Singh Rathore",
+        role: "Director",
+        company: "DotSquare",
+        image: "grad-14"
+    },
+    {
+        name: "Prajakt Raut",
+        role: "Co-founder",
+        company: "Caret Capital",
+        image: "grad-15"
+    },
+    {
+        name: "Mr. Ramakant Jangid",
+        role: "Director",
+        company: "Ultraverse Technology",
+        image: "grad-16"
+    },
+    {
+        name: "Ms. Rishika Rao",
+        role: "Founder",
+        company: "Four Cross Media",
+        image: "grad-17"
     }
 ];
 
@@ -62,7 +116,7 @@ const Speakers = () => {
             <div className="container mx-auto px-6">
                 <div className="mb-20">
                     <h2 className="text-5xl md:text-6xl font-display font-medium mb-6 text-primary tracking-tight">
-                        Meet our Chief Guests & Mentors
+                        Meet our Chief Guests
                     </h2>
                     <p className="text-xl text-secondary max-w-2xl leading-relaxed">
                         To be the best, you need to learn from the best. Our mentors are industry leaders dedicated to helping your startup succeed.

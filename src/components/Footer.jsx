@@ -21,7 +21,8 @@ const Footer = () => {
                 </div>
 
                 <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-                    <p>© 2026 Aarohan 3.0, JKLU. All rights reserved.</p>
+                    <p>© 2026 Aarohan 3.0, JKLU. All rights reserved. </p>
+                    <p> Made with <span className="text-accent">❤️</span> by <a href="https://portfolio-yug-one-212.vercel.app" target="_blank" rel="noopener noreferrer">Yug Jain</a></p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
                         <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
                         <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
