@@ -1,16 +1,77 @@
-# React + Vite
+# Aarohan 3.0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aarohan 3.0 is the flagship startup and entrepreneurship summit of AIC-JKLU (Atal Incubation Centre - JK Lakshmipat University). This repository contains the source code for the official website, built to showcase the event, schedule, speakers, and facilitate registrations.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   **Modern & Responsive Design**: A visually stunning interface built with React and Tailwind CSS.
+-   **Interactive Elements**: Smooth animations using Framer Motion and GSAP.
+-   **Event Schedule**: Comprehensive agenda with filtering options for Keynotes, Sessions, Breaks, and Networking.
+-   **Speaker Showcase**: Detailed profiles of industry leaders and mentors.
+-   **Gallery**: An interactive masonry layout gallery for past event highlights.
+-   **Registration Integration**: Direct link to the registration form.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-   **Frontend**: [React](https://react.dev/)
+-   **Build Tool**: [Vite](https://vitejs.dev/)
+-   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+-   **Animations**: [Framer Motion](https://www.framer.com/motion/), [GSAP](https://greensock.com/gsap/)
+-   **Icons**: [Lucide React](https://lucide.dev/)
 
-## Expanding the ESLint configuration
+## 📦 Installation & Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/yugjain1212/Aarohan.git
+    cd Aarohan
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Build for production:**
+    ```bash
+    npm run build
+    ```
+
+## 📂 Project Structure
+
+```
+Aarohan/
+├── public/             # Static assets (images, logos)
+├── src/
+│   ├── components/     # Reusable UI components (Hero, Navbar, Footer, etc.)
+│   ├── assets/         # Source assets
+│   ├── App.jsx         # Main application component
+│   └── main.jsx        # Entry point
+├── index.html          # HTML template
+├── package.json        # Project dependencies and scripts
+├── tailwind.config.js  # Tailwind configuration
+└── vite.config.js      # Vite configuration
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1.  Fork the repository.
+2.  Create a new branch (`git checkout -b feature/YourFeature`).
+3.  Commit your changes (`git commit -m 'Add some feature'`).
+4.  Push to the branch (`git push origin feature/YourFeature`).
+5.  Open a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 📞 Contact
+
+For queries regarding the summit or the website, please contact team AIC-JKLU.
