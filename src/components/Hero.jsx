@@ -5,10 +5,13 @@ import PhotoGallery from './PhotoGallery';
 
 const Hero = () => {
     const backgroundImages = [
+        '/events/event_01.JPG',
+        '/events/event_02.jpeg',
         '/events/event_03.jpeg',
-        '/events/event_04.jpeg',
-        '/events/event_05.jpeg',
+        '/events/event_05.JPG',
         '/events/event_06.jpeg',
+        '/events/event_07.jpeg',
+        '/events/event_08.JPG',
         '/events/event_031.jpeg',
         '/events/event_041.jpeg',
         '/events/event_051.jpeg',
@@ -17,7 +20,6 @@ const Hero = () => {
         '/events/event_063.jpeg',
         '/events/event_064.jpeg',
         '/events/event_065.jpeg',
-        '/events/event_066.jpeg',
         '/events/event_067.jpeg',
         '/events/event_068.jpeg',
         '/events/event_069.jpeg',
@@ -93,9 +95,14 @@ const Hero = () => {
                     transition={{ delay: 0.4, duration: 0.6 }}
                     className="flex flex-col md:flex-row gap-4 justify-center mt-12"
                 >
-                    <button className="bg-accent text-white px-8 py-4 rounded-full font-bold flex items-center justify-center gap-2 hover:bg-orange-600 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfge_VnwnG-G5G-J3vVTeFrnC6T8xIitQKs8DLxfLzVD4l4Cw/viewform"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-accent text-white px-8 py-4 rounded-full font-bold flex items-center justify-center gap-2 hover:bg-orange-600 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+                    >
                         Register for Aarohan <ArrowRight size={20} />
-                    </button>
+                    </a>
                     <button
                         onClick={() => setShowGallery(true)}
                         className="bg-white/10 backdrop-blur-sm text-white border border-white/30 px-8 py-4 rounded-full font-bold flex items-center justify-center gap-2 hover:bg-white/20 transition-all shadow-sm"

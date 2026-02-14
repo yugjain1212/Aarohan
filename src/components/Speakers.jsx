@@ -7,103 +7,97 @@ const mentors = [
         name: "Mr. R. Gopalakrishnan",
         role: "Special Guest",
         company: "Former Director Tata Sons | Author & Speaker",
-        image: "grad-1"
+        image: "/chief_guest/chief-guest-16.jpeg"
     },
     {
         name: "Mr. Abhishek Jain",
         role: "Practice Head",
         company: "Wipro",
-        image: "grad-2"
+        image: "/chief_guest/chief-guest-09.jpeg"
     },
     {
         name: "Mr. Aditya Nath",
         role: "Founder",
         company: "Eco centric & Nineth Space",
-        image: "grad-3"
-    },
-    {
-        name: "Mr. Ankit Singhal",
-        role: "Director",
-        company: "SysB International",
-        image: "grad-4"
+        image: "/chief_guest/chief-guest-10.jpeg"
     },
     {
         name: "Ankit VK Singhal",
         role: "Founder",
         company: "SysB International & Satwik Universe",
-        image: "grad-5"
+        image: "/chief_guest/chief-guest-04.jpeg"
     },
     {
         name: "Ankur Lohani Kumar",
         role: "Founder",
         company: "Find Your Fit",
-        image: "grad-6"
+        image: "/chief_guest/chief-guest-05.jpeg"
     },
     {
         name: "Apoorv Sharma",
         role: "Co-Founder",
         company: "Excluto",
-        image: "grad-7"
+        image: "/chief_guest/chief-guest-11.jpeg"
     },
     {
         name: "Aquil Busrai",
         role: "CEO",
         company: "Aquil Busrai Consulting",
-        image: "grad-8"
+        image: "/chief_guest/chief-guest-06.jpeg"
     },
     {
         name: "Mr. Arihant Jain",
         role: "Co-Founder",
         company: "SaturnIQ",
-        image: "grad-9"
+        image: "/chief_guest/chief-guest-12.jpeg"
     },
     {
         name: "Dr. Avinash Panwar",
         role: "Technical Education",
         company: "Govt. of India",
-        image: "grad-10"
+        image: "/chief_guest/chief-guest-07.jpeg"
     },
     {
         name: "Gaurav Sharma",
         role: "CEO",
         company: "ACIC-VGU Foundation",
-        image: "grad-11"
+        image: "/chief_guest/chief-guest-13.jpeg"
     },
     {
         name: "Manu Sharma",
         role: "Founder",
         company: "Gladful",
-        image: "grad-12"
+        image: "/chief_guest/chief-guest-08.jpeg"
     },
     {
         name: "Dr. Munish Jindal",
         role: "Founder & CEO",
         company: "HoverRobotix",
-        image: "grad-13"
+        image: "/chief_guest/chief-guest-14.jpeg"
     },
     {
         name: "Mr. Omkar Singh Rathore",
         role: "Director",
         company: "DotSquare",
-        image: "grad-14"
+        image: "/chief_guest/chief-guest-17.jpeg"
     },
     {
         name: "Prajakt Raut",
         role: "Co-founder",
         company: "Caret Capital",
-        image: "grad-15"
+        image: "/chief_guest/chief-guest-15.jpeg"
     },
     {
         name: "Mr. Ramakant Jangid",
         role: "Director",
         company: "Ultraverse Technology",
-        image: "grad-16"
+        image: "/chief_guest/chief-guest-02.jpeg"
     },
     {
         name: "Ms. Rishika Rao",
         role: "Founder",
         company: "Four Cross Media",
-        image: "grad-17"
+        image: "/chief_guest/chief-guest-01.jpeg"
     }
 ];
 
@@ -135,13 +129,18 @@ const Speakers = () => {
                                 className="group cursor-pointer"
                             >
                                 <div className="aspect-[4/5] bg-gray-100 mb-6 overflow-hidden relative">
-                                    {/* Grayscale to Color Effect on Hover */}
-                                    <div className={`absolute inset-0 bg-gradient-to-br from-gray-200 to-gray-300 transition-all duration-500 group-hover:scale-105`}></div>
-
-                                    {/* Placeholder specific avatars based on index to differentiate */}
-                                    <div className="absolute inset-0 flex items-center justify-center text-gray-400 font-display text-8xl opacity-20 group-hover:opacity-10 transition-opacity">
-                                        {mentor.name.charAt(0)}
-                                    </div>
+                                    {/* Image Display */}
+                                    {mentor.image ? (
+                                        <img
+                                            src={mentor.image}
+                                            alt={mentor.name}
+                                            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                        />
+                                    ) : (
+                                        <div className="absolute inset-0 bg-primary/5 flex items-center justify-center text-primary font-display text-8xl opacity-20">
+                                            {mentor.name.charAt(0)}
+                                        </div>
+                                    )}
 
                                     {/* Social Overlay */}
                                     <div className="absolute bottom-0 left-0 w-full p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex gap-4">

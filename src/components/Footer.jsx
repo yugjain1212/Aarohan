@@ -13,19 +13,21 @@ const Footer = () => {
 
                     <div className="flex space-x-8">
                         {/* Social icons now clearer */}
-                        <a href="#" className="text-gray-400 hover:text-white hover:scale-110 transition-all"><Twitter size={24} /></a>
-                        <a href="#" className="text-gray-400 hover:text-white hover:scale-110 transition-all"><Linkedin size={24} /></a>
-                        <a href="#" className="text-gray-400 hover:text-white hover:scale-110 transition-all"><Instagram size={24} /></a>
-                        <a href="#" className="text-gray-400 hover:text-white hover:scale-110 transition-all"><Mail size={24} /></a>
+                        <a href="https://x.com/AicJklu" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white hover:scale-110 transition-all"><Twitter size={24} /></a>
+                        <a href="https://www.linkedin.com/company/aic-jklu/?originalSubdomain=in" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white hover:scale-110 transition-all"><Linkedin size={24} /></a>
+                        <a href="https://www.instagram.com/aicjklu_/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white hover:scale-110 transition-all"><Instagram size={24} /></a>
+                        <a href="mailto:info@aicjklu.in" className="text-gray-400 hover:text-white hover:scale-110 transition-all"><Mail size={24} /></a>
                     </div>
                 </div>
 
                 <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-                    <p>© 2026 Aarohan 3.0, JKLU. All rights reserved. </p>
-                    <p> Made with <span className="text-accent">❤️</span> by <a href="https://portfolio-yug-one-212.vercel.app" target="_blank" rel="noopener noreferrer">Yug Jain</a></p>
-                    <div className="flex space-x-6 mt-4 md:mt-0">
-                        <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-                        <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+                    <p className="flex-1 text-center md:text-left order-3 md:order-1 mt-4 md:mt-0">© 2026 Aarohan 3.0, JKLU. All rights reserved. </p>
+
+                    <div className="text-center order-1 md:order-2">
+                        <p> Made with <span className="text-accent">❤️</span> by <a href="https://portfolio-yug-one-212.vercel.app" target="_blank" rel="noopener noreferrer">Yug Jain</a></p>
+                        <p className="mt-2 text-xs opacity-75">
+                            Special Thanks: <span className="text-gray-400">Mayank Shanker Pathak</span> & <span className="text-gray-400">Pragyansh Mishra</span>
+                        </p>
                     </div>
                 </div>
             </div>

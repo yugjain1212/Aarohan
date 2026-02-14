@@ -5,16 +5,16 @@ const Navbar = () => {
     const menuItems = [
         { label: 'Home', ariaLabel: 'Go to home page', link: '#' },
         { label: 'Programs', ariaLabel: 'View our programs', link: '#programs' },
-        { label: 'Startups', ariaLabel: 'Explore startups', link: '#startups' },
+        { label: 'Highlights', ariaLabel: 'View events highlights', link: '#highlights' },
         { label: 'Mentors', ariaLabel: 'Meet our mentors', link: '#mentors' },
-        { label: 'Events', ariaLabel: 'View events', link: '#events' },
-        { label: 'Apply Now', ariaLabel: 'Apply for Aarohan', link: '#apply' }
+        { label: 'Events', ariaLabel: 'View events', link: '#agenda' },
+        { label: 'Apply Now', ariaLabel: 'Apply for Aarohan', link: 'https://docs.google.com/forms/d/e/1FAIpQLSfge_VnwnG-G5G-J3vVTeFrnC6T8xIitQKs8DLxfLzVD4l4Cw/viewform' }
     ];
 
     const socialItems = [
-        { label: 'Twitter', link: 'https://twitter.com' },
-        { label: 'LinkedIn', link: 'https://linkedin.com' },
-        { label: 'Instagram', link: 'https://instagram.com' }
+        { label: 'Twitter', link: 'https://x.com/AicJklu' },
+        { label: 'LinkedIn', link: 'https://www.linkedin.com/company/aic-jklu/?originalSubdomain=in' },
+        { label: 'Instagram', link: 'https://www.instagram.com/aicjklu_/' }
     ];
 
     return (
