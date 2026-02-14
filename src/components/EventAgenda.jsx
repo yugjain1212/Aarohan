@@ -17,7 +17,7 @@ const agendaData = [
         endTime: "10:35 AM",
         title: "Welcome Address",
         venue: "IET Amphitheatre",
-        speaker: "Dheeraj Sanghi, Vice Chancellor",
+        speaker: "Vijaysekhar Chellaboina, Vice Chancellor",
         type: "session",
         description: "Setting the stage for a day of innovation and inspiration.",
     },
